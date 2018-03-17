@@ -1,0 +1,1 @@
+Inject = Dry::AutoInject(Container)
