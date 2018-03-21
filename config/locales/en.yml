@@ -1,0 +1,9 @@
+en:
+  errors:
+    password_confirmation: must be equal to password
+    not_unique: already taken
+    email?: has wrong format
+    titles:
+      unprocessable_entity: Unprocessable Entity
+    messages:
+      unprocessable_entity: Object is not valid and cannot be processed
