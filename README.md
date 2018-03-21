@@ -158,11 +158,7 @@ So let's create the custom one.
 module CustomPredicates
   include Dry::Logic::Predicates
 
-  predicate(:email?) do |value|
-    email_regexp = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
-
-    value.match? email_regexp
-  end
+  predicate(:email?) { |value| value.match? URI::MailTo::EMAIL_REGEXP }
 end
 ```
 
